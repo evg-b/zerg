@@ -1,19 +1,19 @@
 import axios from 'axios'
 
-const baseUrl = "https://api.surfshark.com"
+const baseUrl = 'https://api.surfshark.com'
 
 const username = 'seber.bobilev@gmail.com'
 const password = '130215240891'
 
-async function loginSurfshark() {
+async function loginSurfshark () {
   const axiosClient = axios.create()
-  const url = `${baseUrl}/v1/auth/login`;
+  const url = `${baseUrl}/v1/auth/login`
   const res = await axiosClient.post(url, {
     password,
-    username,
-  });
+    username
+  })
 
-  const data = res.data;
+  const data = res.data
 
   console.log('login response data')
   console.log(data)
@@ -27,4 +27,4 @@ async function loginSurfshark() {
   // return res.data;
 }
 
-export {loginSurfshark}
+export { loginSurfshark }

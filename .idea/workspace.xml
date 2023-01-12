@@ -4,7 +4,41 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5c00a873-0e8d-4c20-acb3-58b110ec9e9c" name="Changes" comment="" />
+    <list default="true" id="5c00a873-0e8d-4c20-acb3-58b110ec9e9c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/server/src/Overlord/Overlord.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/Overlord/ZergThread.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/Zerg/Zerg.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/db.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/server.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/.eslintrc.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/.idea/app.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/.idea/jsLinters/eslint.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/.idea/prettier.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/.prettierrc.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/App.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/webpack.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/yarn.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/Overlord.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/Zerg.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/ZergThread.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/db.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/server.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/yarn.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/surfshark.js" beforeDir="false" afterPath="$PROJECT_DIR$/surfshark.ts" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,13 +51,18 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
   <component name="PackageJsonUpdateNotifier">
     <dismissed value="$PROJECT_DIR$/package.json" />
+    <dismissed value="$PROJECT_DIR$/server/package.json" />
   </component>
   <component name="ProjectId" id="2Aea4ApdOduqmYBIpNONZX97N8w" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="autoscrollFromSource" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -35,19 +74,28 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "javascript.nodejs.core.library.configured.version": "18.7.0",
-    "javascript.nodejs.core.library.typings.version": "18.7.0",
-    "last_opened_file_path": "/home/evg/zerg/app",
+    "javascript.nodejs.core.library.configured.version": "16.16.0",
+    "javascript.nodejs.core.library.typings.version": "16.18.3",
+    "last_opened_file_path": "/home/evg/elama/elamajs-ui-kit",
     "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.standard": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.standard": "",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "yarn",
-    "settings.editor.selected.configurable": "preferences.keymap",
-    "ts.external.directory.path": "/home/evg/zerg/server/node_modules/typescript/lib",
+    "settings.editor.selected.configurable": "Errors",
+    "ts.external.directory.path": "/home/evg/zerg/node_modules/typescript/lib",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/server/src" />
+      <recent name="$PROJECT_DIR$/server/Overlord" />
+      <recent name="$PROJECT_DIR$/server/Zerg" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="Dockerfile zerg" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
       <deployment type="dockerfile">
@@ -87,6 +135,42 @@
       <workItem from="1661103199213" duration="872000" />
       <workItem from="1662393863821" duration="2125000" />
       <workItem from="1662397050935" duration="3178000" />
+      <workItem from="1663333357243" duration="55000" />
+      <workItem from="1669553105141" duration="214000" />
+      <workItem from="1669555034016" duration="7825000" />
+      <workItem from="1669617391016" duration="1512000" />
+      <workItem from="1669618941838" duration="149000" />
+      <workItem from="1669619366812" duration="95000" />
+      <workItem from="1669619475602" duration="88000" />
+      <workItem from="1669619577435" duration="27000" />
+      <workItem from="1669624300420" duration="715000" />
+      <workItem from="1669625027909" duration="308000" />
+      <workItem from="1669625783248" duration="349000" />
+      <workItem from="1669626145468" duration="21000" />
+      <workItem from="1669725409862" duration="1219000" />
+      <workItem from="1669739408767" duration="559000" />
+      <workItem from="1669793814082" duration="148000" />
+      <workItem from="1670182744810" duration="2030000" />
+      <workItem from="1670251198365" duration="609000" />
+      <workItem from="1670253207547" duration="1215000" />
+      <workItem from="1670324264318" duration="997000" />
+      <workItem from="1670404405501" duration="1985000" />
+      <workItem from="1670406513926" duration="952000" />
+      <workItem from="1670407486656" duration="1390000" />
+      <workItem from="1670669597808" duration="1438000" />
+      <workItem from="1670681937256" duration="3174000" />
+      <workItem from="1670830582477" duration="134000" />
+      <workItem from="1671089043983" duration="853000" />
+      <workItem from="1671654526823" duration="561000" />
+      <workItem from="1671712378925" duration="226000" />
+      <workItem from="1671712729954" duration="13000" />
+      <workItem from="1671712897226" duration="663000" />
+      <workItem from="1671713595965" duration="26000" />
+      <workItem from="1672043578206" duration="368000" />
+      <workItem from="1672051158490" duration="10954000" />
+      <workItem from="1672132108057" duration="144000" />
+      <workItem from="1673260055030" duration="8287000" />
+      <workItem from="1673337028883" duration="46000" />
     </task>
     <servers />
   </component>
@@ -94,9 +178,28 @@
     <option name="version" value="3" />
     <option name="exactExcludedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/src/index.js" />
-        <option value="$PROJECT_DIR$/app/src/App.js" />
+        <option value="$PROJECT_DIR$/server/Zerg/Zerg.d.ts" />
+        <option value="$PROJECT_DIR$/server/Zerg/Zerg.js" />
+        <option value="$PROJECT_DIR$/server/Overlord/ZergThread.js" />
+        <option value="$PROJECT_DIR$/server/Overlord/ZergThread.d.ts" />
+        <option value="$PROJECT_DIR$/server/Overlord/Overlord.js" />
+        <option value="$PROJECT_DIR$/server/Overlord/Overlord.d.ts" />
+        <option value="$PROJECT_DIR$/models/zerg/zerg.type.d.ts" />
+        <option value="$PROJECT_DIR$/models/zerg/index.js" />
+        <option value="$PROJECT_DIR$/models/zerg/zerg.type.js" />
+        <option value="$PROJECT_DIR$/models/zerg/index.d.ts" />
       </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
     </option>
   </component>
 </project>

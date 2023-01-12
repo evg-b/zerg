@@ -1,6 +1,6 @@
 import express from 'express'
-import { ZergGo, ZergProxy } from './server/Zerg.ts'
-import { loginSurfshark } from './surfshark.js'
+import { ZergGo, ZergProxy } from 'server/Zerg/Zerg.ts'
+import { loginSurfshark } from './surfshark.ts'
 
 const host = '127.0.0.1'
 const port = 7013

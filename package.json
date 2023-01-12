@@ -4,18 +4,26 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "eslint -c .eslintrc.js app server"
   },
   "keywords": [],
-  "author": "",
-  "type": "module",
+  "author": "evg-b",
   "license": "ISC",
-  "dependencies": {
-    "axios": "0.26.1",
-    "express": "4.17.3",
-    "playwright": "1.19.2"
-  },
+  "private": true,
+  "workspaces": [
+    "app",
+    "server"
+  ],
+  "dependencies": {},
   "devDependencies": {
-    "typescript": "4.5.2"
+    "@typescript-eslint/eslint-plugin": "^5.44.0",
+    "@typescript-eslint/parser": "^5.44.0",
+    "eslint": "8.0.1",
+    "eslint-config-standard-with-typescript": "23.0.0",
+    "eslint-plugin-import": "2.25.2",
+    "eslint-plugin-n": "15.0.0",
+    "eslint-plugin-promise": "6.0.0",
+    "eslint-plugin-react": "7.31.11",
+    "typescript": "4.9.3"
   }
 }
