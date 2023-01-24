@@ -28,8 +28,11 @@ module.exports = {
   ],
   devServer: {
     proxy: {
-      "/api/*": {
-        target:"http://localhost:4444",
+      "*": {
+        target:"http://127.0.0.1:4444",
+        // headers: {
+        //   "Connection": "keep-alive"
+        // },
         changeOrigin: true,
         secure: false
       }
