@@ -27,11 +27,13 @@ module.exports = {
     })
   ],
   devServer: {
-    // proxy: {
-    //   '/api': 'http://localhost:4444/api'
-    // },
-    open: true,
-    compress: true,
+    proxy: {
+      "/api/*": {
+        target:"http://localhost:4444",
+        changeOrigin: true,
+        secure: false
+      }
+    },
     hot: true,
     port: 9001
   }
