@@ -27,21 +27,29 @@ app.get('/', (_, res) => {
 })
 
 /// /////// zerg //////////
-app.post('/zerg/create', (req, res) => {
+app.post('/api/zerg/create', (req, res) => {
   const { targetUrl }: any = req.body
   console.log('targetUrl', targetUrl)
 
-  // const workerScript = path.join(__dirname, './ZergThread.ts')
-  // const worker = new Worker(workerScript, { workerData: { id: 1 } })
-  // console.log('worker id', worker)
-
   // TODO: выдать зерга должен Overlord
   // const { id, error } = Overlord.zergCreate(targetUrl)
-  overlord.zergCreate()
+  overlord.zergCreate(targetUrl)
   res.send('Create zerg')
 })
+overlord.zergCreate('')
+app.post('/api/zerg/stop', (req, res) => {
+  const { id }: any = req.body
 
-overlord.zergCreate()
+  const result = overlord.zergStop(id)
+  console.log('\'/zerg/stop\' result', result)
+  res.send(result)
+})
+
+app.get('/api/zerg/pool', (_, res) => {
+  const poolInfo = overlord.getPool()
+  console.log('poolInfo:', poolInfo)
+  res.send(poolInfo)
+})
 
 app.listen(port, host, () => {
   console.log(`Server listens http://${host}:${port}`)

@@ -5,39 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5c00a873-0e8d-4c20-acb3-58b110ec9e9c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/server/src/Overlord/Overlord.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/Overlord/ZergThread.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/Zerg/Zerg.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/db.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/server.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.eslintrc.js" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.eslintrc.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.idea/app.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.idea/jsLinters/eslint.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.idea/prettier.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.prettierrc.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/App.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/webpack.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/yarn.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/Overlord.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/Zerg.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/ZergThread.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/db.ts" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/server/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/server.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/tsconfig.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/yarn.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/surfshark.js" beforeDir="false" afterPath="$PROJECT_DIR$/surfshark.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/Overlord/Overlord.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/Overlord/Overlord.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/Overlord/ZergThread.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/Overlord/ZergThread.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/Zerg/Zerg.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/Zerg/Zerg.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/db.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/db.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/server.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/server.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,33 +42,35 @@
     <dismissed value="$PROJECT_DIR$/server/package.json" />
   </component>
   <component name="ProjectId" id="2Aea4ApdOduqmYBIpNONZX97N8w" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="autoscrollFromSource" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "javascript.nodejs.core.library.configured.version": "16.16.0",
-    "javascript.nodejs.core.library.typings.version": "16.18.3",
-    "last_opened_file_path": "/home/evg/elama/elamajs-ui-kit",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.standard": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.standard": "",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "yarn",
-    "settings.editor.selected.configurable": "Errors",
-    "ts.external.directory.path": "/home/evg/zerg/node_modules/typescript/lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;16.16.0&quot;,
+    &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;16.18.3&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/evg/zerg&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;Errors&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/home/evg/zerg/node_modules/typescript/lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/server/src" />
@@ -171,6 +153,13 @@
       <workItem from="1672132108057" duration="144000" />
       <workItem from="1673260055030" duration="8287000" />
       <workItem from="1673337028883" duration="46000" />
+      <workItem from="1674121065600" duration="1097000" />
+      <workItem from="1674125415550" duration="610000" />
+      <workItem from="1674214459341" duration="8177000" />
+      <workItem from="1674468017655" duration="10895000" />
+      <workItem from="1674554468414" duration="1743000" />
+      <workItem from="1674564798862" duration="7514000" />
+      <workItem from="1674575408624" duration="1911000" />
     </task>
     <servers />
   </component>

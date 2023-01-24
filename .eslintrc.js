@@ -19,6 +19,7 @@ module.exports = {
   ],
   ignorePatterns: ['dist', 'node_modules'],
   rules: {
+    '@typescript-eslint/consistent-type-definitions': 'off',
     '@typescript-eslint/restrict-template-expressions': 'off',
     '@typescript-eslint/explicit-function-return-type': 'off',
     '@typescript-eslint/strict-boolean-expressions': 'off',

@@ -1,3 +1,4 @@
+import { Worker } from 'worker_threads'
 
 /*
 * Task==========
@@ -10,6 +11,7 @@
 *
 *
 */
+
 export interface Task {
   id: number
   name: string
@@ -52,4 +54,12 @@ export const Profiles = [
   }
 ]
 
-export const PoolZerg = new Map()
+type PoolZergItem = {
+  id: number
+  worker: Worker
+  // status
+}
+
+type PoolZergType = Map<number, PoolZergItem>
+
+export const PoolZerg: PoolZergType = new Map()

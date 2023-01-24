@@ -27,9 +27,9 @@ module.exports = {
     })
   ],
   devServer: {
-    proxy: {
-      '/': 'http://localhost:4444'
-    },
+    // proxy: {
+    //   '/api': 'http://localhost:4444/api'
+    // },
     open: true,
     compress: true,
     hot: true,
