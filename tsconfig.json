@@ -121,7 +121,9 @@
     "noEmit": false, // Не создавать выходные файлы компилятора, такие как исходный код JavaScript, исходные карты или объявления.
     "newLine": "lf",
 
-    "preserveSymlinks": true
+    "preserveSymlinks": true,
+
+    "moduleResolution": "node"
   },
   "exclude": [
     "node_modules"

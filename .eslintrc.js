@@ -1,23 +1,17 @@
 module.exports = {
   env: {
     browser: true,
-    es2021: true
+    es2021: true,
+    node: true
   },
+  parser: '@typescript-eslint/parser',
+  plugins: ['react', '@typescript-eslint', 'prettier'],
+  ignorePatterns: ['node_modules', 'dist'],
   extends: [
     'eslint:recommended',
-    'plugin:@typescript-eslint/eslint-recommended',
     'plugin:@typescript-eslint/recommended',
-    'standard-with-typescript'
+    'plugin:prettier/recommended'
   ],
-  parser: '@typescript-eslint/parser',
-  parserOptions: {
-    project: './tsconfig.json'
-  },
-  plugins: [
-    'react',
-    '@typescript-eslint'
-  ],
-  ignorePatterns: ['dist', 'node_modules'],
   rules: {
     '@typescript-eslint/consistent-type-definitions': 'off',
     '@typescript-eslint/restrict-template-expressions': 'off',

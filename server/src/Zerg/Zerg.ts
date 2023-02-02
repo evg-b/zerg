@@ -12,25 +12,27 @@ type MoviePlayer = {
 export class Zerg {
   page: Page
 
-  constructor (page: Page) {
+  constructor(page: Page) {
     this.page = page
   }
 
   /**
    * Получение статуса видео
    */
-  async getPlayerState (): Promise<string> {
+  async getPlayerState(): Promise<string> {
     const mapState: Record<string, string> = {
       '-1': 'not started', // -1 - воспроизведение видео не началось
-      0: 'end', //  0 - воспроизведение видео завершено
-      1: 'play', //  1 - воспроизведение
-      2: 'pause', //  2 - пауза
-      3: 'buffering', //  3 - буферизация
-      5: 'in queue' //  5 - видео находится в очереди
+      '0': 'end', //  0 - воспроизведение видео завершено
+      '1': 'play', //  1 - воспроизведение
+      '2': 'pause', //  2 - пауза
+      '3': 'buffering', //  3 - буферизация
+      '5': 'in queue' //  5 - видео находится в очереди
     }
 
     const result = await this.page.evaluate(() => {
-      const MP: MoviePlayer = document.getElementById('movie_player') as any as MoviePlayer
+      const MP: MoviePlayer = document.getElementById(
+        'movie_player'
+      ) as any as MoviePlayer
       return MP.getPlayerState()
     })
     return mapState[result.toString()]
@@ -39,9 +41,11 @@ export class Zerg {
   /**
    * Сколько прошло времени с начало видео
    */
-  async getCurrentTime (): Promise<number> {
+  async getCurrentTime(): Promise<number> {
     const result = await this.page.evaluate(() => {
-      const MP: MoviePlayer = document.getElementById('movie_player') as any as MoviePlayer
+      const MP: MoviePlayer = document.getElementById(
+        'movie_player'
+      ) as any as MoviePlayer
       return MP.getCurrentTime()
     })
     return result
@@ -50,9 +54,11 @@ export class Zerg {
   /**
    * Продолжительность видео
    */
-  async getDuration (): Promise<number> {
+  async getDuration(): Promise<number> {
     const result = await this.page.evaluate(() => {
-      const MP: MoviePlayer = document.getElementById('movie_player') as any as MoviePlayer
+      const MP: MoviePlayer = document.getElementById(
+        'movie_player'
+      ) as any as MoviePlayer
       return MP.getDuration()
     })
     return result
@@ -61,34 +67,48 @@ export class Zerg {
   /**
    * Сколько прошло времени с начало видео в процентах
    */
-  async getPercent (): Promise<number> {
+  async getPercent(): Promise<number> {
     const Duration = await this.getDuration()
     const CurrentTime = await this.getCurrentTime()
 
-    return CurrentTime / Duration * 100
+    return (CurrentTime / Duration) * 100
+  }
+
+  async getVideoUrl(): Promise<string> {
+    const result = await this.page.evaluate(() => {
+      const MP: MoviePlayer = document.getElementById(
+        'movie_player'
+      ) as any as MoviePlayer
+      return MP.getVideoUrl()
+    })
+    return result
   }
 
   /**
    * @ не безопасно (могут отследить)
    * Запуск видео через метод объекта
    */
-  playVideo () {
+  async playVideo() {
     // TODO: FIX сделать возврат результата выполнения функции
-    this.page.evaluate(() => {
-      const MP: MoviePlayer = document.getElementById('movie_player') as any as MoviePlayer
+    await this.page.evaluate(() => {
+      const MP: MoviePlayer = document.getElementById(
+        'movie_player'
+      ) as any as MoviePlayer
       return MP.playVideo()
     })
   }
 
-  pauseVideo () {
+  async pauseVideo() {
     // TODO: FIX сделать возврат результата выполнения функции
-    this.page.evaluate(() => {
-      const MP: MoviePlayer = document.getElementById('movie_player') as any as MoviePlayer
+    await this.page.evaluate(() => {
+      const MP: MoviePlayer = document.getElementById(
+        'movie_player'
+      ) as any as MoviePlayer
       return MP.pauseVideo()
     })
   }
 
-  async sleep (time: number) {
+  async sleep(time: number) {
     return await new Promise(function (resolve) {
       setTimeout(resolve, time)
     })

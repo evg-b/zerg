@@ -37,18 +37,33 @@ app.post('/api/zerg/create', (req, res) => {
   res.send('Create zerg')
 })
 overlord.zergCreate('')
-app.post('/api/zerg/stop', (req, res) => {
-  const { id }: any = req.body
-
-  const result = overlord.zergStop(id)
-  console.log('\'/zerg/stop\' result', result)
-  res.send(result)
-})
-
 app.get('/api/zerg/pool', (_, res) => {
   const poolInfo = overlord.getPool()
   console.log('poolInfo:', poolInfo)
   res.send(poolInfo)
+})
+app.post('/api/zerg/stop', (req, res) => {
+  const { id }: any = req.body
+
+  const result = overlord.zergStop(id)
+  console.log("'/zerg/stop' result", result)
+  res.send(result)
+})
+
+app.post('/api/zerg/pause', (req, res) => {
+  const { id }: any = req.body
+
+  const result = overlord.zergPause(id)
+  console.log("'/zerg/pause' result", result)
+  res.send(result)
+})
+
+app.post('/api/zerg/play', (req, res) => {
+  const { id }: any = req.body
+
+  const result = overlord.zergPlay(id)
+  console.log("'/zerg/play' result", result)
+  res.send(result)
 })
 
 app.listen(port, host, () => {
