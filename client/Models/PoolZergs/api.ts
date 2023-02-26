@@ -11,7 +11,7 @@ type getPoolZergsResponse = Array<{
   id: number
   url?: string
   status?: string
-  progress?: number
+  progress?: number  
 }>
 const getPoolZergs = async url => await axios.get(url).then(res => res.data)
 /// ////////////// тут я делаю хуки query и mutation
