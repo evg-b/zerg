@@ -1,0 +1,36 @@
+{
+  "tasks": [
+    {
+      "id": "698a6d90-b50f-11ed-a6ad-3d277c31b890",
+      "url": "test-url22",
+      "countZergInitial": 20,
+      "countZergWork": 0,
+      "countZergDone": 0,
+      "status": "pause"
+    },
+    {
+      "id": "69c66520-b50f-11ed-a6ad-3d277c31b890",
+      "url": "test-url22",
+      "countZergInitial": 20,
+      "countZergWork": 0,
+      "countZergDone": 0,
+      "status": "pause"
+    },
+    {
+      "id": "6a0f7c10-b50f-11ed-a6ad-3d277c31b890",
+      "url": "test-url22",
+      "countZergInitial": 20,
+      "countZergWork": 0,
+      "countZergDone": 0,
+      "status": "pause"
+    },
+    {
+      "id": "75202050-b50f-11ed-aec8-f76d2b4178ec",
+      "url": "test-url22",
+      "countZergInitial": 208,
+      "countZergWork": 0,
+      "countZergDone": 0,
+      "status": "pause"
+    }
+  ]
+}
