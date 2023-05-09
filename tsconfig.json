@@ -121,11 +121,17 @@
     "noEmit": false, // Не создавать выходные файлы компилятора, такие как исходный код JavaScript, исходные карты или объявления.
     "newLine": "lf",
 
-    "preserveSymlinks": true,
+    "preserveSymlinks": false,
 
-    "moduleResolution": "node"
+    "moduleResolution": "node",
+//    "paths": {
+//      "@models/*": ["./models/*"]
+//    }
   },
-  "exclude": [
-    "node_modules"
-  ]
+//  "include": [
+//    "server","models"
+//  ],
+//  "exclude": [
+//    "node_modules"
+//  ]
 }

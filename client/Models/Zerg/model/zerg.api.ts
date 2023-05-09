@@ -11,12 +11,14 @@ type getPoolZergsResponse = Array<{
   id: number
   url?: string
   status?: string
-  progress?: number  
+  progress?: number
 }>
-const getPoolZergs = async url => await axios.get(url).then(res => res.data)
+const getPoolZergs = async (url: string) =>
+  await axios.get(url).then((res) => res.data)
 /// ////////////// тут я делаю хуки query и mutation
 const HooksAPI = {
-  useGetPoolZergs: () => useSWR<getPoolZergsResponse>('/api/zerg/pool', getPoolZergs)
+  useGetPoolZergs: () =>
+    useSWR<getPoolZergsResponse>('/api/zerg/pool', getPoolZergs)
 }
 
 export default HooksAPI

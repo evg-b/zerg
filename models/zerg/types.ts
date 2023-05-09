@@ -1,8 +1,8 @@
 // response - ответ
 // request  - запрос
 
-export interface ZergCreateResponse {}
+export type ZergCreateRes = {}
 
-export interface ZergCreateRequest {
+export type ZergCreateReq = {
   targetUrl: string
 }

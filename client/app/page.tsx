@@ -1,7 +1,16 @@
+'use client'
 import React, { FC } from 'react'
+import { Task } from '../Models'
 
 const Page: FC = () => {
-  return <h1>Hello, Next.js!</h1>
+  return (
+    <>
+      <Task.TaskCreateModal />
+      <div>
+        <Task.TaskList />
+      </div>
+    </>
+  )
 }
 
 export default Page

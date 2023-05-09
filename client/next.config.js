@@ -3,7 +3,7 @@ const nextConfig = {
   experimental: {
     appDir: true
   },
-  async rewrites () {
+  async rewrites() {
     return [
       {
         source: '/api/:path*',
