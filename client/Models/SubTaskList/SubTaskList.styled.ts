@@ -1,9 +1,7 @@
 import styled from 'styled-components'
 
-export const Wrapper = styled.div`
+export const SubTaskListWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  padding: 15px;
 `
-
-export const ItemList = styled.div``

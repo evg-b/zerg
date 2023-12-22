@@ -1,45 +1,45 @@
 'use client'
-import React, { FC } from 'react'
+import React, { PropsWithChildren, useState } from 'react'
+import { RootStyleRegistry } from './RootStyleRegistry'
+import MyLayout from './MyLayout'
+
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
-import { SnackbarProvider } from 'notistack'
-import { ConfirmProvider } from 'material-ui-confirm'
-import Link from 'next/link'
-import { AppBar, Toolbar, Button } from '@mui/material'
+import { httpBatchLink } from '@trpc/client'
+import { trpc } from 'trpc'
 import './styles.css'
 
-// Create a client
-const queryClient = new QueryClient({
-  defaultOptions: {
-    queries: {
-      staleTime: Infinity
-    }
-  }
-})
+const SERVER_PORT = 3100
 
-const RootLayout: FC<any> = ({ children }) => {
+export default function RootLayout({ children }: PropsWithChildren) {
+  const [queryClient] = useState(() => new QueryClient())
+  const [trpcClient] = useState(() =>
+    trpc.createClient({
+      links: [
+        httpBatchLink({
+          url: `http://localhost:${SERVER_PORT}/trpc`
+          // You can pass any HTTP headers you wish here
+          // async headers() {
+          //   return {
+          //     authorization: getAuthCookie()
+          //   }
+          // }
+        })
+      ]
+    })
+  )
+
   return (
-    <html>
-      <QueryClientProvider client={queryClient}>
-        <SnackbarProvider>
-          <ConfirmProvider>
-            <body>
-              <AppBar color="transparent" position="static">
-                <Toolbar>
-                  <Button variant="outlined" component={Link} href={'/'}>
-                    Main
-                  </Button>
-                  <Button variant="outlined" component={Link} href={'/zerg'}>
-                    Zerg
-                  </Button>
-                </Toolbar>
-              </AppBar>
-              <div id="root">{children}</div>
-            </body>
-          </ConfirmProvider>
-        </SnackbarProvider>
-      </QueryClientProvider>
+    <html lang="es">
+      <head />
+      <body>
+        <trpc.Provider client={trpcClient} queryClient={queryClient}>
+          <QueryClientProvider client={queryClient}>
+            <RootStyleRegistry>
+              <MyLayout>{children}</MyLayout>
+            </RootStyleRegistry>
+          </QueryClientProvider>
+        </trpc.Provider>
+      </body>
     </html>
   )
 }
-
-export default RootLayout

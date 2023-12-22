@@ -1,8 +1,0 @@
-{
-  "name": "@models/dto",
-  "version": "1.0.0",
-  "description": "dto",
-  "main": "index.ts",
-  "author": "evg-b",
-  "license": "ISC"
-}

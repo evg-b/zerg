@@ -106,7 +106,6 @@
     "skipLibCheck": true,                                 /* Skip type checking all .d.ts files. */
 
     "downlevelIteration": true,
-    "declaration": true,            // generate declaration .d.ts files
 
     "isolatedModules": true,
 

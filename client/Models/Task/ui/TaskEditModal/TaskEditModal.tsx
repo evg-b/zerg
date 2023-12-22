@@ -1,27 +1,30 @@
 'use client'
-import React, { useState, useEffect } from 'react'
+import React, { FC, useEffect } from 'react'
 import { trpc } from 'trpc'
-import { Button, Modal, Form, Input, InputNumber, message } from 'antd'
+import { Modal, Form, Input, InputNumber, message } from 'antd'
 
 // import * as Styled from './TaskCreateModal.styled'
 
-const TaskCreateModal = () => {
+type OwnProps = {
+  id: string
+  url: string
+  count: number
+  open: boolean
+  onClose: () => void
+}
+
+const TaskEditModal: FC<OwnProps> = ({ id, url, count, open, onClose }) => {
   const [form] = Form.useForm<{ url: string; count: number }>()
   const [messageApi, contextHolder] = message.useMessage()
   const { mutate, isLoading, isSuccess, isError, error } =
-    trpc.tasks.createTask.useMutation()
-  const [open, setOpen] = useState(false)
-  // const [confirmLoading, setConfirmLoading] = useState(false)
-
-  const showModal = () => {
-    setOpen(true)
-  }
+    trpc.tasks.updateTask.useMutation()
 
   const handleOk = async () => {
     try {
       const values = await form.validateFields()
       console.log('Success:', values)
       mutate({
+        id,
         url: values.url,
         count: Number(values.count)
       })
@@ -31,26 +34,21 @@ const TaskCreateModal = () => {
   }
 
   const handleCancel = () => {
-    console.log('Clicked cancel button')
-    setOpen(false)
+    onClose()
   }
 
   const onFinishFailed = (errorInfo: any) => {
     console.log('Failed:', errorInfo)
   }
-  useEffect(() => {
-    if (isSuccess) {
-      console.log('useEffect:', isSuccess)
-      handleCancel()
-    }
-  }, [isSuccess])
 
   useEffect(() => {
     if (isSuccess) {
+      console.log('useEffect:', isSuccess)
       messageApi.open({
         type: 'success',
-        content: 'New Task create Success'
+        content: 'Task edit Success'
       })
+      handleCancel()
     }
   }, [isSuccess])
 
@@ -66,14 +64,13 @@ const TaskCreateModal = () => {
   return (
     <>
       {contextHolder}
-      <Button onClick={showModal}>New Task</Button>
       <Modal
-        title="Create New Task"
+        title="Edit task"
         open={open}
         onOk={handleOk}
         onCancel={handleCancel}
         confirmLoading={isLoading}
-        okText="create"
+        okText="edit"
         cancelText="cancel">
         <Form
           form={form}
@@ -82,10 +79,11 @@ const TaskCreateModal = () => {
           labelCol={{ span: 8 }}
           wrapperCol={{ span: 16 }}
           style={{ maxWidth: 600 }}
-          // initialValues={{ remember: true }}
+          initialValues={{ url, count }}
           onFinish={handleOk}
           onFinishFailed={onFinishFailed}
           autoComplete="off">
+          <Form.Item label="id">{id}</Form.Item>
           <Form.Item
             label="url"
             name="url"
@@ -105,4 +103,4 @@ const TaskCreateModal = () => {
   )
 }
 
-export default TaskCreateModal
+export default TaskEditModal
